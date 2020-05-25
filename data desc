@@ -1,0 +1,15 @@
+Zillow’s Zestimate home valuation has shaken up the U.S. real estate industry since first released 11 years ago.
+
+A home is often the largest and most expensive purchase a person makes in his or her lifetime. Ensuring homeowners have a trusted way to monitor this asset is incredibly important. The Zestimate was created to give consumers as much information as possible about homes and the housing market, marking the first time consumers had access to this type of home value information at no cost.
+
+“Zestimates” are estimated home values based on 7.5 million statistical and machine learning models that analyze hundreds of data points on each property. And, by continually improving the median margin of error (from 14% at the onset to 5% today), Zillow has since become established as one of the largest, most trusted marketplaces for real estate information in the U.S. and a leading example of impactful machine learning.
+
+In this competition, Zillow is asking you to predict the log-error between their Zestimate and the actual sale price, given all the features of a home. The log error is defined as
+
+logerror=log(Zestimate)−log(SalePrice)
+and it is recorded in the transactions file train.csv. In this competition, you are going to predict the logerror for the months in Fall 2017. Since all the real estate transactions in the U.S. are publicly available, we will close the competition (no longer accepting submissions) before the evaluation period begins.
+
+Train/Test split
+You are provided with a full list of real estate properties in three counties (Los Angeles, Orange and Ventura, California) data in 2016.
+The train data has all the transactions before October 15, 2016, plus some of the transactions after October 15, 2016.
+The test data in the public leaderboard has the rest of the transactions between October 15 and December 31, 2016.
